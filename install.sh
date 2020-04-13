@@ -39,4 +39,7 @@ if [ ! -n "$ISXRANDR" ]
     then  printf "You need to install \"xrandr\" for the rotate script to work.\n"
 fi
 
- 
+# For Ubuntu ~18, we need a different xinput for touchscreen calibration
+sudo apt install xserver-xorg-input-evdev xinput-calibrator
+sudo apt remove xserver-xorg-input-libinput
+
