@@ -43,3 +43,6 @@ fi
 sudo apt install xserver-xorg-input-evdev xinput-calibrator
 sudo apt remove xserver-xorg-input-libinput
 
+# Install GPSD options
+sudo cp gpsd /etc/default/gpsd
+
